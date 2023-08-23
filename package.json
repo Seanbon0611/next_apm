@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_OPTIONS='-r dd-trace/init' next start",
     "lint": "next lint"
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
+    "dd-trace": "^4.13.0",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
